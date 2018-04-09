@@ -35,6 +35,7 @@ type Calculation{
 }
 
 type Query{
+    #Datos de la función biometrico
     calculationes(company:Int!,employees:String!,in:String!,out:String!):[Calculation]
 }
 
