@@ -7,7 +7,7 @@ const cors = require('cors')
 const app = express()
 
 app.use(
-    '/graphql',
+    '/api',
     bodyParser.json(),
     cors(),
     graphqlExpress({
@@ -23,7 +23,7 @@ app.use(
 app.use(
     '/apiBiometrico',
     graphiqlExpress({
-        endpointURL: '/graphql'
+        endpointURL: '/api'
     })
 )
 
